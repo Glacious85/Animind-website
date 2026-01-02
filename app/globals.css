@@ -1,0 +1,229 @@
+/* ============================================
+   ANIMIND WEBSITE - GLOBAL STYLES
+   Premium, Calm, Pet-Friendly Design
+   ============================================ */
+
+/* Customization Guide:
+   - Colors: Edit the CSS variables below (--color-primary, etc.)
+   - Fonts: Change --font-primary and --font-heading
+   - Spacing: Adjust --spacing-* variables
+   - Border radius: Change --radius-* for more/less rounded corners
+*/
+
+:root {
+  /* 🎨 COLOR PALETTE - Matching Android App Theme */
+  /* Teal/Dark Gradient Theme from app/src/main/java/com/animind/ui/theme/Color.kt */
+  
+  /* Primary Teal Colors */
+  --color-primary: #4FD1C7;        /* TealPrimary - Main teal brand color */
+  --color-primary-light: #2DD4BF;  /* TealSecondary - Bright teal for hover states */
+  --color-primary-dark: #14B8A6;   /* TealTertiary - Deep teal for darker elements */
+  
+  /* Dark Gradient Background (from app) */
+  --color-background: #0F172A;     /* DarkGradientStart - Dark slate blue */
+  --color-background-end: #1E293B;  /* DarkGradientEnd - Slightly lighter slate */
+  --color-surface: #1E293B;        /* DarkSurface - Surface color for cards */
+  --color-surface-variant: #334155;  /* DarkSurfaceVariant - Lighter surface variant */
+  
+  /* Text Colors (light text on dark background) */
+  --color-text: #F1F5F9;          /* OnDark - Primary text (high contrast) */
+  --color-text-light: #CBD5E1;    /* OnDarkVariant - Secondary text (70% opacity) */
+  --color-text-muted: #94A3B8;     /* OnDarkMuted - Tertiary text (60% opacity) */
+  
+  /* Accent Colors (from app) */
+  --color-success: #10B981;        /* AccentGreen - Success/correct */
+  --color-error: #EF4444;          /* AccentRed - Error/wrong */
+  --color-warning: #F59E0B;        /* AccentYellow - Warning */
+  --color-info: #3B82F6;           /* AccentBlue - Info, neutral actions */
+  
+  /* Border and Glass Effects */
+  --color-border: rgba(255, 255, 255, 0.1);  /* Subtle border for dark theme */
+  --color-glass: rgba(255, 255, 255, 0.1);    /* Glassmorphism effect */
+  
+  /* 📐 SPACING - Consistent spacing system */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 1rem;      /* 16px */
+  --spacing-md: 1.5rem;    /* 24px */
+  --spacing-lg: 2rem;      /* 32px */
+  --spacing-xl: 3rem;      /* 48px */
+  --spacing-2xl: 4rem;     /* 64px */
+  --spacing-3xl: 6rem;     /* 96px */
+  
+  /* 🔲 BORDER RADIUS - Rounded, friendly corners */
+  --radius-sm: 0.5rem;     /* 8px */
+  --radius-md: 1rem;       /* 16px */
+  --radius-lg: 1.5rem;     /* 24px */
+  --radius-xl: 2rem;       /* 32px */
+  --radius-full: 9999px;   /* Fully rounded */
+  
+  /* 📝 TYPOGRAPHY */
+  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  
+  /* 🎭 SHADOWS - Dark theme shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  
+  /* ⚡ TRANSITIONS - Smooth animations */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-end) 100%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* 📱 TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-light);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+/* 🎯 BUTTONS */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: none;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #0F172A;
+  box-shadow: 0 4px 12px rgba(79, 209, 199, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79, 209, 199, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(79, 209, 199, 0.1);
+  color: var(--color-primary-light);
+}
+
+.btn-large {
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: 1.125rem;
+}
+
+/* 📦 CONTAINERS */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section {
+  padding: var(--spacing-3xl) 0;
+}
+
+/* 🎴 CARDS */
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  background-color: var(--color-surface-variant);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+  border-color: rgba(79, 209, 199, 0.3);
+}
+
+/* 📐 UTILITIES */
+.text-center {
+  text-align: center;
+}
+
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }
+
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+

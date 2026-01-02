@@ -1,0 +1,48 @@
+========================================
+  Commands για το Repository σου
+========================================
+
+Repository URL: https://github.com/Glacious85/Animind-website.git
+
+========================================
+  Τρέξε αυτά τα commands:
+========================================
+
+cd website
+
+git init
+git add .
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/Glacious85/Animind-website.git
+git branch -M main
+git push -u origin main
+
+========================================
+  Αν έχεις ήδη κάνει git init:
+========================================
+
+cd website
+
+git add .
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/Glacious85/Animind-website.git
+git branch -M main
+git push -u origin main
+
+========================================
+  Personal Access Token (αν χρειαστεί):
+========================================
+
+1. GitHub → Settings → Developer settings
+2. Personal access tokens → Tokens (classic)
+3. Generate new token
+4. Δώσε όνομα: "Animind"
+5. Επίλεξε: repo (check the box)
+6. Generate token
+7. ΑΝΤΙΓΡΑΨΕ ΤΟ TOKEN
+8. Χρησιμοποίησε το ως password
+
+========================================
+
