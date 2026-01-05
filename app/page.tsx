@@ -52,7 +52,7 @@ export default function Home() {
             fontWeight: 800,
             lineHeight: 1.1,
           }}>
-            Pioneering Visual AI for Pet Behavior Analysis
+            Leading Innovation in Pet Behavior Recognition
           </h1>
           
           <p style={{
