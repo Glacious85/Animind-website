@@ -12,7 +12,7 @@ export default function Home() {
         justifyContent: 'center',
         textAlign: 'center',
         overflow: 'hidden',
-        background: 'linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%)',
+        background: 'linear-gradient(135deg, #6366F1 0%, #4F46E5 100%)',
       }}>
         {/* Background Image Overlay */}
         <div style={{
@@ -35,7 +35,7 @@ export default function Home() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(135deg, rgba(79, 209, 199, 0.95) 0%, rgba(20, 184, 166, 0.95) 100%)',
+          background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.92) 0%, rgba(79, 70, 229, 0.92) 100%)',
           zIndex: 2,
         }} />
 
@@ -45,9 +45,9 @@ export default function Home() {
           padding: 'var(--spacing-3xl) var(--spacing-md)',
         }}>
           <h1 style={{
-            color: '#0F172A',
+            color: '#F1F5F9',
             marginBottom: 'var(--spacing-md)',
-            textShadow: '0 2px 20px rgba(15, 23, 42, 0.2)',
+            textShadow: '0 2px 20px rgba(0, 0, 0, 0.3)',
             fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
             fontWeight: 800,
             lineHeight: 1.1,
@@ -57,7 +57,7 @@ export default function Home() {
           
           <p style={{
             fontSize: 'clamp(1.25rem, 3vw, 1.75rem)',
-            color: 'rgba(15, 23, 42, 0.95)',
+            color: 'rgba(241, 245, 249, 0.95)',
             maxWidth: '800px',
             margin: '0 auto var(--spacing-lg)',
             lineHeight: '1.6',
@@ -83,14 +83,14 @@ export default function Home() {
               <div style={{
                 fontSize: 'clamp(2rem, 4vw, 3rem)',
                 fontWeight: 800,
-                color: '#0F172A',
+                color: '#F1F5F9',
                 marginBottom: 'var(--spacing-xs)',
               }}>
                 100%
               </div>
               <div style={{
                 fontSize: '1rem',
-                color: 'rgba(15, 23, 42, 0.8)',
+                color: 'rgba(241, 245, 249, 0.9)',
                 fontWeight: 600,
               }}>
                 On-Device Processing
@@ -100,14 +100,14 @@ export default function Home() {
               <div style={{
                 fontSize: 'clamp(2rem, 4vw, 3rem)',
                 fontWeight: 800,
-                color: '#0F172A',
+                color: '#F1F5F9',
                 marginBottom: 'var(--spacing-xs)',
               }}>
                 #1
               </div>
               <div style={{
                 fontSize: '1rem',
-                color: 'rgba(15, 23, 42, 0.8)',
+                color: 'rgba(241, 245, 249, 0.9)',
                 fontWeight: 600,
               }}>
                 AI for Rabbits
@@ -117,14 +117,14 @@ export default function Home() {
               <div style={{
                 fontSize: 'clamp(2rem, 4vw, 3rem)',
                 fontWeight: 800,
-                color: '#0F172A',
+                color: '#F1F5F9',
                 marginBottom: 'var(--spacing-xs)',
               }}>
                 🐇
               </div>
               <div style={{
                 fontSize: '1rem',
-                color: 'rgba(15, 23, 42, 0.8)',
+                color: 'rgba(241, 245, 249, 0.9)',
                 fontWeight: 600,
               }}>
                 Visual Analysis
@@ -143,15 +143,15 @@ export default function Home() {
               fontSize: '1.25rem',
               padding: 'var(--spacing-md) var(--spacing-2xl)',
               backgroundColor: '#0F172A',
-              color: 'var(--color-primary)',
+              color: '#F1F5F9',
               boxShadow: '0 8px 32px rgba(15, 23, 42, 0.4)',
             }}>
               Get Early Access — Android Beta
             </Link>
             <Link href="/how-it-works" className="btn btn-secondary btn-large" style={{
-              backgroundColor: 'rgba(15, 23, 42, 0.1)',
-              color: '#0F172A',
-              borderColor: '#0F172A',
+              backgroundColor: 'rgba(15, 23, 42, 0.2)',
+              color: '#F1F5F9',
+              borderColor: '#F1F5F9',
               borderWidth: '2px',
               fontSize: '1.125rem',
               padding: 'var(--spacing-md) var(--spacing-2xl)',
