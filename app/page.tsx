@@ -70,6 +70,68 @@ export default function Home() {
             </span>
           </p>
 
+          {/* Quick Stats */}
+          <div style={{
+            display: 'flex',
+            gap: 'var(--spacing-xl)',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            marginTop: 'var(--spacing-xl)',
+            marginBottom: 'var(--spacing-md)',
+          }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                fontSize: 'clamp(2rem, 4vw, 3rem)',
+                fontWeight: 800,
+                color: '#0F172A',
+                marginBottom: 'var(--spacing-xs)',
+              }}>
+                100%
+              </div>
+              <div style={{
+                fontSize: '1rem',
+                color: 'rgba(15, 23, 42, 0.8)',
+                fontWeight: 600,
+              }}>
+                On-Device Processing
+              </div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                fontSize: 'clamp(2rem, 4vw, 3rem)',
+                fontWeight: 800,
+                color: '#0F172A',
+                marginBottom: 'var(--spacing-xs)',
+              }}>
+                #1
+              </div>
+              <div style={{
+                fontSize: '1rem',
+                color: 'rgba(15, 23, 42, 0.8)',
+                fontWeight: 600,
+              }}>
+                AI for Rabbits
+              </div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                fontSize: 'clamp(2rem, 4vw, 3rem)',
+                fontWeight: 800,
+                color: '#0F172A',
+                marginBottom: 'var(--spacing-xs)',
+              }}>
+                🐇
+              </div>
+              <div style={{
+                fontSize: '1rem',
+                color: 'rgba(15, 23, 42, 0.8)',
+                fontWeight: 600,
+              }}>
+                Visual Analysis
+              </div>
+            </div>
+          </div>
+
           <div style={{
             display: 'flex',
             gap: 'var(--spacing-md)',
@@ -480,108 +542,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Proof / Testimonials */}
-      <section className="section">
-        <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-2xl)' }}>
-            <h2>What Beta Testers Are Saying</h2>
-          </div>
-          
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: 'var(--spacing-lg)',
-          }}>
-            <div className="card" style={{
-              background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-variant) 100%)',
-            }}>
-              <div style={{
-                display: 'flex',
-                gap: 'var(--spacing-xs)',
-                marginBottom: 'var(--spacing-md)',
-                fontSize: '1.5rem',
-              }}>
-                {'⭐'.repeat(5)}
-              </div>
-              <p style={{ 
-                fontStyle: 'italic', 
-                lineHeight: '1.7',
-                marginBottom: 'var(--spacing-md)',
-                fontSize: '1.05rem',
-              }}>
-                "This helped me understand my bunny! I never realized how much stress she was showing. 
-                The visual analysis is incredible."
-              </p>
-              <p style={{ 
-                color: 'var(--color-text-muted)', 
-                fontSize: '0.9rem',
-                fontWeight: 600,
-              }}>
-                — Beta Tester, Rabbit Owner
-              </p>
-            </div>
-
-            <div className="card" style={{
-              background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-variant) 100%)',
-            }}>
-              <div style={{
-                display: 'flex',
-                gap: 'var(--spacing-xs)',
-                marginBottom: 'var(--spacing-md)',
-                fontSize: '1.5rem',
-              }}>
-                {'⭐'.repeat(5)}
-              </div>
-              <p style={{ 
-                fontStyle: 'italic', 
-                lineHeight: '1.7',
-                marginBottom: 'var(--spacing-md)',
-                fontSize: '1.05rem',
-              }}>
-                "Finally, an app that focuses on what rabbits actually do, not what they sound like. 
-                The computer vision technology is a game-changer."
-              </p>
-              <p style={{ 
-                color: 'var(--color-text-muted)', 
-                fontSize: '0.9rem',
-                fontWeight: 600,
-              }}>
-                — Beta Tester, Multi-Rabbit Owner
-              </p>
-            </div>
-
-            <div className="card" style={{
-              background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-variant) 100%)',
-            }}>
-              <div style={{
-                display: 'flex',
-                gap: 'var(--spacing-xs)',
-                marginBottom: 'var(--spacing-md)',
-                fontSize: '1.5rem',
-              }}>
-                {'⭐'.repeat(5)}
-              </div>
-              <p style={{ 
-                fontStyle: 'italic', 
-                lineHeight: '1.7',
-                marginBottom: 'var(--spacing-md)',
-                fontSize: '1.05rem',
-              }}>
-                "The behavioral insights are so detailed. I can now track my rabbit's wellbeing over time 
-                and share reports with my vet."
-              </p>
-              <p style={{ 
-                color: 'var(--color-text-muted)', 
-                fontSize: '0.9rem',
-                fontWeight: 600,
-              }}>
-                — Beta Tester, Veterinary Student
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Pricing / Future Plans */}
       <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
         <div className="container">
@@ -681,6 +641,87 @@ export default function Home() {
               }}>
                 Pricing details coming soon
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-2xl)' }}>
+            <h2>Frequently Asked Questions</h2>
+            <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.125rem', color: 'var(--color-text-light)' }}>
+              Common questions about Animind and how it works
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gap: 'var(--spacing-md)',
+            maxWidth: '800px',
+            margin: '0 auto',
+          }}>
+            <div className="card" style={{
+              background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-variant) 100%)',
+            }}>
+              <h3 style={{ color: 'var(--color-primary)', fontSize: '1.25rem', marginBottom: 'var(--spacing-sm)' }}>
+                How does Animind work?
+              </h3>
+              <p style={{ lineHeight: '1.7', color: 'var(--color-text-light)' }}>
+                Animind uses advanced computer vision technology to analyze your rabbit's body language through video and photos. 
+                The AI processes visual data on your device, detecting subtle behavioral patterns that are often missed by human observers.
+              </p>
+            </div>
+
+            <div className="card" style={{
+              background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-variant) 100%)',
+            }}>
+              <h3 style={{ color: 'var(--color-primary)', fontSize: '1.25rem', marginBottom: 'var(--spacing-sm)' }}>
+                Is my data private?
+              </h3>
+              <p style={{ lineHeight: '1.7', color: 'var(--color-text-light)' }}>
+                Yes! All video analysis happens 100% on your device. Your pet's images and videos never leave your phone 
+                unless you explicitly choose to provide feedback to improve the AI. Most data is stored locally on your device.
+              </p>
+            </div>
+
+            <div className="card" style={{
+              background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-variant) 100%)',
+            }}>
+              <h3 style={{ color: 'var(--color-primary)', fontSize: '1.25rem', marginBottom: 'var(--spacing-sm)' }}>
+                Why rabbits first?
+              </h3>
+              <p style={{ lineHeight: '1.7', color: 'var(--color-text-light)' }}>
+                Rabbits are among the most misunderstood companion animals. They communicate almost exclusively through 
+                subtle visual cues, making them perfect for visual AI analysis. Animind is the first AI application 
+                specifically designed for rabbit behavior recognition.
+              </p>
+            </div>
+
+            <div className="card" style={{
+              background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-variant) 100%)',
+            }}>
+              <h3 style={{ color: 'var(--color-primary)', fontSize: '1.25rem', marginBottom: 'var(--spacing-sm)' }}>
+                Can Animind diagnose my rabbit's health?
+              </h3>
+              <p style={{ lineHeight: '1.7', color: 'var(--color-text-light)' }}>
+                <strong>No.</strong> Animind is for informational purposes only and does not replace professional veterinary care. 
+                It helps you understand your rabbit's behavior patterns, but you should always consult a qualified veterinarian 
+                for medical diagnoses, treatment, or health concerns.
+              </p>
+            </div>
+
+            <div className="card" style={{
+              background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-variant) 100%)',
+            }}>
+              <h3 style={{ color: 'var(--color-primary)', fontSize: '1.25rem', marginBottom: 'var(--spacing-sm)' }}>
+                When will cats and dogs be available?
+              </h3>
+              <p style={{ lineHeight: '1.7', color: 'var(--color-text-light)' }}>
+                We're actively working on expanding Animind to support cats and dogs. Join our beta testing program to 
+                get early access when these features become available.
+              </p>
             </div>
           </div>
         </div>
