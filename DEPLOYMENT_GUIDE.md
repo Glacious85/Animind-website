@@ -144,3 +144,4 @@ A: Θα πρέπει να αλλάξεις τα DNS records. Το παλιό sit
 2. Περίμενε λίγο (DNS propagation παίρνει χρόνο)
 3. Ελέγξε τα error logs στο Vercel/Netlify dashboard
 
+

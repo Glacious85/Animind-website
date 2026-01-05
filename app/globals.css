@@ -79,6 +79,18 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Account for sticky navbar */
+}
+
+/* Smooth scroll with better performance */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    scroll-margin-top: 80px;
+  }
 }
 
 body {
@@ -199,6 +211,21 @@ a:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   transform: translateY(-4px);
   border-color: rgba(79, 209, 199, 0.3);
+  transition: all var(--transition-base);
+}
+
+/* Smooth transitions for interactive elements */
+a, button, .btn {
+  transition: all var(--transition-base);
+}
+
+/* Better focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 
 /* 📐 UTILITIES */

@@ -28,6 +28,7 @@ export default function Footer() {
               <Link href="/how-it-works" style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>How It Works</Link>
               <Link href="/about" style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>About</Link>
               <Link href="/privacy" style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Privacy & Ethics</Link>
+              <Link href="/terms" style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Terms of Service</Link>
               <Link href="/contact" style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Contact</Link>
             </div>
           </div>

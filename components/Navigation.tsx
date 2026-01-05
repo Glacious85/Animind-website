@@ -38,6 +38,7 @@ export default function Navigation() {
           <Link href="/how-it-works">How It Works</Link>
           <Link href="/about">About</Link>
           <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
           <Link href="/contact" className="btn btn-primary">Join Testing</Link>
         </div>
 
@@ -73,6 +74,7 @@ export default function Navigation() {
           <Link href="/how-it-works" onClick={() => setIsOpen(false)}>How It Works</Link>
           <Link href="/about" onClick={() => setIsOpen(false)}>About</Link>
           <Link href="/privacy" onClick={() => setIsOpen(false)}>Privacy</Link>
+          <Link href="/terms" onClick={() => setIsOpen(false)}>Terms</Link>
           <Link href="/contact" onClick={() => setIsOpen(false)} className="btn btn-primary">Join Testing</Link>
         </div>
       )}
@@ -98,4 +100,5 @@ export default function Navigation() {
     </nav>
   )
 }
+
 

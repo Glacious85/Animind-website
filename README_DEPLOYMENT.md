@@ -74,3 +74,4 @@
 2. Περίμενε λίγο (DNS propagation)
 3. Ελέγξε τα logs στο Vercel/Netlify dashboard
 
+

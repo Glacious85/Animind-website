@@ -19,7 +19,7 @@ export default function Contact() {
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\nPet Type: ${formData.petType}\n\nMessage:\n${formData.message}`
     
     // You can replace this email with your actual email
-    window.location.href = `mailto:beta@animind.app?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = `mailto:support@animind.zohodesk.eu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     
     setSubmitted(true)
   }
@@ -54,8 +54,8 @@ export default function Contact() {
             </p>
             <p>
               If the email didn't open, please send us an email at{' '}
-              <a href="mailto:beta@animind.app" style={{ color: 'white', textDecoration: 'underline' }}>
-                beta@animind.app
+              <a href="mailto:support@animind.zohodesk.eu" style={{ color: 'white', textDecoration: 'underline' }}>
+                support@animind.zohodesk.eu
               </a>
             </p>
             <button
@@ -213,12 +213,12 @@ export default function Contact() {
           <p style={{ marginBottom: 'var(--spacing-md)', color: 'var(--color-text-light)' }}>
             You can also reach us directly at:
           </p>
-          <a href="mailto:beta@animind.app" style={{
+          <a href="mailto:support@animind.zohodesk.eu" style={{
             fontSize: '1.125rem',
             fontWeight: 600,
             color: 'var(--color-primary)',
           }}>
-            beta@animind.app
+            support@animind.zohodesk.eu
           </a>
         </div>
       </div>
