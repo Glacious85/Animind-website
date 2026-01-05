@@ -52,7 +52,7 @@ export default function Home() {
             fontWeight: 800,
             lineHeight: 1.1,
           }}>
-            Understand Your Rabbit Like Never Before 🐇
+            Pioneering Visual AI for Pet Behavior Analysis
           </h1>
           
           <p style={{
@@ -63,10 +63,10 @@ export default function Home() {
             lineHeight: '1.6',
             fontWeight: 600,
           }}>
-            See what your rabbit is feeling — without guesswork.
+            The first AI-powered application designed specifically for rabbit behavior recognition.
             <br />
             <span style={{ fontSize: '1.1em', fontWeight: 700 }}>
-              Visual AI analyzes body language & movement.
+              Advanced computer vision technology that sees what your pet can't say.
             </span>
           </p>
 
