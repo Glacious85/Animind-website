@@ -12,7 +12,7 @@ export default function Home() {
         justifyContent: 'center',
         textAlign: 'center',
         overflow: 'hidden',
-        background: 'linear-gradient(135deg, #6366F1 0%, #4F46E5 100%)',
+        background: 'linear-gradient(135deg, #14B8A6 0%, #0D9488 100%)',
       }}>
         {/* Background Image Overlay */}
         <div style={{
@@ -35,7 +35,7 @@ export default function Home() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.92) 0%, rgba(79, 70, 229, 0.92) 100%)',
+          background: 'linear-gradient(135deg, rgba(20, 184, 166, 0.92) 0%, rgba(13, 148, 136, 0.92) 100%)',
           zIndex: 2,
         }} />
 
